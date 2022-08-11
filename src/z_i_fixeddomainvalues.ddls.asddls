@@ -9,7 +9,7 @@
 @AbapCatalog.buffering.numberOfKeyFields: 1
 /*+[hideWarning] { "IDS" : [ "KEY_CHECK" ] }*/
 define view Z_I_FixedDomainValues
-  as select from zdd07l
+  as select from dd07l
   association [0..*] to Z_I_FixedDomainValuesTexts as _Texts
     on $projection.Name = _Texts.Name
     and $projection.ActivationState = _Texts.ActivationState
